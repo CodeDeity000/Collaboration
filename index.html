@@ -1,556 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Freelancer Collaboration Opportunity - Grow Your Income Together</title>
-  <meta name="description" content="Join our collaboration to increase your passive income, get more projects and clients. Help each other strengthen strengths and support weaknesses. Our expert team brings experience and high-tech skills to grow accounts together." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .contact-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .contact-icon svg {
-      width: 28px;
-      height: 28px;
-    }
-    /* Email icon color */
-    .contact-icon.email-icon svg { color: #4285F4; fill: currentColor; }
-    .contact-icon.whatsapp-icon svg { color: #25D366; fill: currentColor; }
-    .contact-icon.telegram-icon svg { color: #0088cc; fill: currentColor; }
-    .contact-icon.discord-icon svg { color: #5865F2; fill: currentColor; }
-    [data-theme="light"] .contact-icon.email-icon svg { color: #1a73e8; }
-    [data-theme="light"] .contact-icon.whatsapp-icon svg { color: #25D366; }
-    [data-theme="light"] .contact-icon.telegram-icon svg { color: #0088cc; }
-    [data-theme="light"] .contact-icon.discord-icon svg { color: #5865F2; }
-  </style>
-  <script>
-    // Prevent scroll restoration and scroll to top on refresh - runs immediately in head
-    (function() {
-      if ('scrollRestoration' in history) {
-        history.scrollRestoration = 'manual';
-      }
-      // Detect if this is a page refresh
-      var isPageRefresh = (performance.navigation && performance.navigation.type === 1) || 
-                         (performance.getEntriesByType && performance.getEntriesByType('navigation')[0] && 
-                          performance.getEntriesByType('navigation')[0].type === 'reload');
-      // On refresh, remove hash from URL to prevent browser from scrolling to anchor
-      if (isPageRefresh && window.location.hash) {
-        history.replaceState(null, '', window.location.pathname + window.location.search);
-      }
-      // Scroll to top immediately
-      window.scrollTo(0, 0);
-    })();
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Freelancing Partnership - Grow Your Income Together</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="header-left">
-        <div class="brand">Freelancer Collaboration</div>
-        <div class="nav-dropdown">
-          <button class="nav-dropdown-toggle" aria-label="Quick Links" aria-expanded="false">
-            Quick Links
-            <span class="dropdown-arrow">▼</span>
-          </button>
-          <div class="nav-dropdown-menu">
-            <a href="#about">About Collaboration</a>
-            <a href="#experience">My Experience</a>
-            <a href="#plan">The Plan</a>
-            <a href="#collaboration">Collaboration</a>
-            <a href="#role">Your Role</a>
-            <a href="#future">Future Plan</a>
-            <a href="#apply">Get Started</a>
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Collaborative Partnership</div>
+                <ul class="nav-links">
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#plan">Plan</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#collaboration">Collaboration</a></li>
+                    <li><a href="#future">Future</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
-      </div>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu" title="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav">
-        <div class="nav-dropdown mobile-only">
-          <button class="nav-dropdown-toggle" aria-label="Quick Links" aria-expanded="false">
-            Quick Links
-            <span class="dropdown-arrow">▼</span>
-          </button>
-          <div class="nav-dropdown-menu">
-            <a href="#about">About Collaboration</a>
-            <a href="#experience">My Experience</a>
-            <a href="#plan">The Plan</a>
-            <a href="#collaboration">Collaboration</a>
-            <a href="#role">Your Role</a>
-            <a href="#future">Future Plan</a>
-            <a href="#apply">Get Started</a>
-          </div>
-        </div>
-        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
-          <span class="theme-icon">🌙</span>
-        </button>
-        <a class="btn btn-sm" href="#apply">Apply</a>
-      </nav>
-    </div>
-  </header>
+    </nav>
 
-  <main>
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <h1>Grow Your Income Through Strategic Collaboration</h1>
-          <p>Are you a developer looking to increase your passive income while connecting with more clients and projects? Join our collaboration where we help each other strengthen our strengths and support our weaknesses. Together, we can achieve more than working alone.</p>
-          <div class="hero-cta">
-            <a class="btn" href="#apply">Explore Collaboration</a>
-            <a class="btn btn-outline" href="#experience">My Experience</a>
-          </div>
-        </div>
-        <div class="hero-image-wrapper">
-          <img class="hero-image" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop" alt="Team collaboration and professional growth" />
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonials" class="section alt">
-      <div class="container">
-        <h2>What Our Collaborators Say</h2>
-        <p class="section-subtitle">Hear from developers and professionals who are growing their income through our collaboration</p>
-        <div class="testimonials-grid" id="testimonials-container">
-          <!-- Testimonials will be loaded dynamically from JSON -->
-        </div>
-        <div class="testimonials-cta">
-          <a href="testimonials.html" class="btn">See More Testimonials</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <div class="about-header">
-          <h2>About Our Collaboration</h2>
-          <p class="about-subtitle">A partnership focused on mutual growth—increasing income, securing better projects, and helping each other succeed</p>
-        </div>
-        <div class="two-col">
-          <div class="about-content">
-            <div class="about-intro">
-              <p>The purpose of our collaboration is to <strong>increase your income, get more cool projects and clients, help each other strengthen our strengths, and support each other's weaknesses</strong>. Whether you're a senior developer, junior developer, or non-technical professional, this collaboration is designed to benefit everyone involved.</p>
-            </div>
-            <div class="about-features">
-              <div class="feature-box">
-                <div class="feature-icon">🎯</div>
-                <div>
-                  <h4>Mutual Growth</h4>
-                  <p>Work together to increase income, get more projects, and connect with better clients. We help each other grow while leveraging our combined experience and skills.</p>
+        <div class="container">
+            <h1 class="hero-title">Transform Your Freelancing Career Through <span class="highlight">Strategic Collaboration</span></h1>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Join a collaborative partnership that helps you increase your income, access more exciting projects, and build stronger client relationships—all while supporting each other's growth.</p>
+                    <div class="hero-features">
+                        <div class="feature-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>No Investment Required</span>
+                        </div>
+                        <div class="feature-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Just Few Hours Per Month</span>
+                        </div>
+                        <div class="feature-badge">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>100% Secure & Protected</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="feature-box">
-                <div class="feature-icon">🤝</div>
-                <div>
-                  <h4>Strengthen Strengths</h4>
-                  <p>Everyone brings unique strengths to the collaboration. We support each other's weaknesses and amplify each other's strengths for better results.</p>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Team Collaboration" class="hero-main-image">
                 </div>
-              </div>
-              <div class="feature-box">
-                <div class="feature-icon">🔒</div>
-                <div>
-                  <h4>Complete Security</h4>
-                  <p>All sensitive information is protected. You maintain full control over your financial matters and decisions throughout the collaboration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2 class="section-title">Real Achievements from Our Collaborators</h2>
+                <p class="section-subtitle">See how our partners have transformed their freelancing careers through strategic collaboration</p>
+            </div>
+            <div class="testimonials-content">
+                <div class="testimonials-grid" id="testimonials-container">
+                    <!-- Testimonials will be loaded dynamically -->
                 </div>
-              </div>
-              <div class="feature-box">
-                <div class="feature-icon">⏱️</div>
-                <div>
-                  <h4>Minimal Time Commitment</h4>
-                  <p>You only need to spend a few hours per month managing financial matters and overseeing progress. Perfect for busy professionals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">My Experience with Freelancing Platforms</h2>
+            </div>
+            <div class="experience-content">
+                <div class="experience-text">
+                    <p class="lead-text">I usually find my projects and income through several freelance platforms. Over time, I've built a strong and trusted profile there with excellent reviews and great client feedback.</p>
+                    <p>These days, I don't really have to spend much time looking for work—clients often come to me directly after seeing my reviews and testimonials. Honestly, my account has become strong enough that I can just stay available, and projects naturally find their way to me because people trust my experience and skills.</p>
+                    <div class="question-box">
+                        <h3>What about your experience?</h3>
+                        <p>Have you ever worked on freelancing platforms? Which do you prefer—a full-time regular job or freelancing?</p>
+                    </div>
                 </div>
-              </div>
+                <div class="experience-visual">
+                    <div class="experience-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Freelancing Success" class="experience-image">
+                        <div class="image-overlay">
+                            <h3>Proven Track Record</h3>
+                            <p>Years of successful freelancing experience</p>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5★</div>
+                            <div class="stat-label">Average Rating</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Repeat Clients</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card-list">
-            <img class="section-image" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop" alt="Team collaboration and account management" />
-            <div class="card about-specializations">
-              <div class="card-header">
-                <h3>How We Work Together</h3>
-              </div>
-              <ul class="checklist">
-                <li>Connecting with clients who have real projects</li>
-                <li>Technical discussions and project planning</li>
-                <li>Building contracts and agreements</li>
-                <li>Completing tasks and delivering quality work</li>
-                <li>Managing budgets and payments</li>
-                <li>Sharing opportunities and income</li>
-                <li>Learning from each other's experience</li>
-              </ul>
-            </div>
-            <div class="card" style="background: rgba(16,185,129,.08); border-left: 4px solid var(--brand); margin-top: 16px;">
-              <h4>🔒 Security & Privacy</h4>
-              <p style="margin: 0;">We understand your concerns about security. That's why we've designed this collaboration to be completely safe. You don't need to share any credentials, bank information, or sensitive data. We protect all sensitive information and ensure complete security while helping you grow your opportunities and increase your income.</p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section id="experience" class="section alt">
-      <div class="container">
-        <h2>My Experience</h2>
-        <p class="section-subtitle">Building a trusted freelancing profile that attracts clients naturally</p>
-        <div class="two-col">
-          <div>
-            <img class="section-image" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop" alt="Freelancing platform dashboard with reviews and ratings" />
-            <p>I usually find my projects and income through several freelance platforms. Over time, I've built a strong and trusted profile there with excellent reviews and great client feedback. These days, I don't really have to spend much time looking for work—clients often come to me directly after seeing my reviews and testimonials.</p>
-            <p>Honestly, my account has become strong enough that I can just stay available, and projects naturally find their way to me because people trust my experience and skills.</p>
-            <div class="card" style="margin-top: 24px;">
-              <h4>What About Your Experience?</h4>
-              <p>Have you ever worked on freelancing platforms? Which do you prefer—full-time regular jobs or freelancing? Everyone's journey is different, and that's what makes our collaboration valuable. Whether you're a senior developer, junior developer, or someone exploring new opportunities, there's room for growth together.</p>
+    <!-- Plan Section -->
+    <section id="plan" class="plan-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Vision</span>
+                <h2 class="section-title">My Plan: Building a Collaborative Agency Team</h2>
             </div>
-          </div>
-          <aside class="aside-note">
-            <h4>The Power of Trust</h4>
-            <p>When clients see strong reviews and a proven track record, they're more likely to reach out directly. That's the level of trust we're building together—where quality work speaks for itself.</p>
-            <img class="section-image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" alt="Professional developer portfolio and testimonials" />
-          </aside>
+            <div class="plan-content">
+                <div class="plan-visual">
+                    <div class="plan-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Team Building" class="plan-image">
+                    </div>
+                    <div class="comparison-box">
+                        <div class="comparison-item traditional">
+                            <div class="comparison-icon">🏢</div>
+                            <h3>Traditional Agencies</h3>
+                            <ul>
+                                <li>Build development teams</li>
+                                <li>Publish websites</li>
+                                <li>Marketing campaigns</li>
+                                <li>Cold pitching clients</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item our-approach">
+                            <div class="comparison-icon">🎯</div>
+                            <h3>Our Approach</h3>
+                            <ul>
+                                <li>Connect with existing clients</li>
+                                <li>Real, paid projects ready</li>
+                                <li>No pitching required</li>
+                                <li>Direct project delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-text">
+                    <p class="lead-text">I have the plan to build an agency team having lots of clients and projects to support reliable and safe income sources.</p>
+                    <p>Of course, there are lots of agency teams all over the world. They build their development teams and publish their websites and market their skills and find clients and projects. But my concept is different from them. I believe it is the most efficient and powerful way to find clients who already have their development plan rather than marketing.</p>
+                    <div class="highlight-box">
+                        <p><strong>I think the most important thing is to connect with clients who already have real, paid projects to offer.</strong> That way, we don't have to spend time pitching ideas or trying to sell something—we simply use our skills to deliver what they need. It's a straightforward and respectful exchange: they bring the project and the budget, and we focus on doing our best work.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="plan" class="section">
-      <div class="container">
-        <h2>My Plan</h2>
-        <p class="section-subtitle">A different approach to building a successful agency team</p>
-        <div class="two-col">
-          <div>
-            <p>I have the plan to build an agency team with lots of clients and projects to support reliable and safe income sources.</p>
-            <p>Of course, there are lots of agency teams around the world. They build their development teams, publish their websites, and market their skills to find clients and projects. But my concept is different from them. <strong>I believe it's the best efficient and powerful way to connect with clients who already have real, paid projects to offer</strong>, rather than spending time on marketing.</p>
-            <p>I think the most important thing is to connect with clients who already have real, paid projects to offer. That way, we don't have to spend time pitching ideas or trying to sell something—we simply use our skills to deliver what they need. It's a straightforward and respectful exchange: they bring the project and the budget, and we focus on doing our best work.</p>
-            <div class="card-list" style="margin-top: 24px;">
-              <div class="card">
-                <h3>The Traditional Approach</h3>
-                <p>Build a website, create marketing materials, pitch ideas, and try to sell services. This takes time and doesn't always guarantee clients with real budgets.</p>
-              </div>
-              <div class="card">
-                <h3>Our Approach</h3>
-                <p>Connect directly with clients who already have projects and budgets. They bring the project and the budget—we focus on doing our best work. It's a straightforward and respectful exchange.</p>
-              </div>
+    <!-- Approach Section -->
+    <section id="approach" class="approach-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Strategy</span>
+                <h2 class="section-title">The Way to Handle the Plan</h2>
             </div>
-          </div>
-          <aside class="aside-note">
-            <h4>Why This Works Better</h4>
-            <p>By focusing on clients who already have real, paid projects, we eliminate the uncertainty. We don't have to convince anyone—we just deliver quality work on projects that are already funded.</p>
-            <img class="section-image" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop" alt="Team collaboration and project planning" />
-          </aside>
+            <div class="approach-content">
+                <div class="approach-text">
+                    <p class="lead-text">There are many job marketplaces with millions of clients who already have projects they want to develop.</p>
+                    <p>These clients are looking for developers, and if we can connect with them effectively, we can receive projects directly from them. By communicating with clients, sharing our skills, and understanding the requirements of their projects, we can secure paid work and receive the budget offered on these contracts.</p>
+                    <p class="emphasis-text">I believe that connecting with clients in this way is the best method to get projects and grow our opportunities.</p>
+                </div>
+                <div class="approach-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" alt="Client Connection" class="approach-main-image">
+                </div>
+                <div class="workflow-visual">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Connect</h3>
+                            <p>Reach out to clients on job marketplaces</p>
+                        </div>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Understand</h3>
+                            <p>Analyze project requirements and share skills</p>
+                        </div>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Deliver</h3>
+                            <p>Secure contracts and receive budgets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div style="margin-top: 40px;">
-          <h3>The Way to Handle the Plan</h3>
-          <p>There are many job marketplaces with millions of clients who already have projects they want to develop. These clients are looking for developers, and if we can connect with them effectively, we can receive projects directly from them. By communicating with clients, sharing our skills, and understanding the requirements of their projects, we can secure paid work and receive the budget offered on these contracts.</p>
-          <div class="steps-grid">
-            <div class="step">
-              <div class="step-num">01</div>
-              <h3>Connect with Clients</h3>
-              <p>Access job marketplaces where clients already have projects ready to start.</p>
-            </div>
-            <div class="step">
-              <div class="step-num">02</div>
-              <h3>Share Skills</h3>
-              <p>Communicate our capabilities and understand their project requirements.</p>
-            </div>
-            <div class="step">
-              <div class="step-num">03</div>
-              <h3>Secure Projects</h3>
-              <p>Receive paid work and the budget offered on these contracts.</p>
-            </div>
-            <div class="step">
-              <div class="step-num">04</div>
-              <h3>Grow Together</h3>
-              <p>Build relationships and expand opportunities for everyone involved.</p>
-            </div>
-          </div>
-          <p style="margin-top: 24px;">I believe that connecting with clients in this way is the best method to get projects and grow our opportunities.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="collaboration" class="section alt">
-      <div class="container">
-        <h2>Our Collaboration</h2>
-        <p class="section-subtitle">Working together to increase opportunities and create mutual growth</p>
-        <div class="two-col">
-          <div>
-            <p>As I mentioned, I have extensive experience in securing projects on job marketplaces. Based on my skills and past experience, I plan to scale our operations to significantly grow revenue and opportunities for everyone involved. <strong>I would appreciate your support in this process.</strong></p>
-            <p>Through our collaboration, I can help grow your accounts effectively, turning them into strong sources of regular income. During this process, I will share my experience on how to get jobs more effectively and quickly. And I will share the promised amount of income from your account.</p>
-            <p>This collaboration is designed to help you with your work and support you to increase your income simply. We're not asking you to violate any policies—we're simply helping you maximize your account's potential while you maintain full control over your finances and decisions.</p>
-            <div class="card" style="margin-top: 24px; background: rgba(16,185,129,.1); border-left: 4px solid var(--brand);">
-              <h4>What You'll Gain</h4>
-              <ul class="checklist">
-                <li>Increased passive income—earn even while you're busy</li>
-                <li>Your account grows with more projects and better reviews</li>
-                <li>Regular income from shared opportunities</li>
-                <li>Learning from proven strategies and experience</li>
-                <li>A stronger profile that attracts more clients</li>
-                <li>Complete security—no credential or bank information sharing required</li>
-                <li>We handle bidding, technical discussions, contracts, and tasks</li>
-                <li>You maintain full control over finances and decisions</li>
-                <li>Only a few hours per month required</li>
-                <li>No investment required</li>
-              </ul>
+    <!-- Collaboration Section -->
+    <section id="collaboration" class="collaboration-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Partnership</span>
+                <h2 class="section-title">Why Collaboration Makes Sense</h2>
             </div>
-            <div class="card" style="margin-top: 24px; background: rgba(59,130,246,.08); border-left: 4px solid rgba(59,130,246,.5);">
-              <h4>How Our Collaboration Works</h4>
-              <p style="margin: 0 0 12px 0;">Our expert team will work with your account to:</p>
-              <ul class="checklist" style="margin: 0;">
-                <li>Bidding on projects</li>
-                <li>Technical discussions with clients</li>
-                <li>Building contracts</li>
-                <li>Doing the tasks and delivering work</li>
-                <li>Receiving the budget</li>
-                <li>Sharing a portion of income with you</li>
-              </ul>
-              <p style="margin: 12px 0 0 0;"><strong>Important:</strong> You don't need to share any credentials, bank information, or sensitive data. We protect all sensitive information and ensure complete security. Our team uses high-tech skills and rich experience to help grow your account and generate revenue. This collaboration is considered as helping your work and supporting you to increase your income—it's not a violation of any policies.</p>
+            <div class="collaboration-content">
+                <div class="collaboration-intro">
+                    <p class="lead-text">When freelancers work together, amazing things happen. Instead of competing for the same projects, we can combine our strengths to create something much more powerful than what we could achieve alone.</p>
+                    <p>Think about it: you might have a strong profile with great reviews, but perhaps you're busy with other commitments or want to explore new opportunities. Meanwhile, I have extensive experience in connecting with clients and securing projects on various job marketplaces. Together, we can help each other reach new heights.</p>
+                </div>
+                
+                <div class="collaboration-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=900&q=80" alt="Partnership Success" class="collaboration-main-image">
+                </div>
+                <div class="collaboration-benefits">
+                    <div class="benefit-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&q=80" alt="Growth" class="benefit-image">
+                        <div class="benefit-icon">🚀</div>
+                        <h3>Increase Your Income</h3>
+                        <p>By working together, we can access more projects and clients than either of us could individually. This means more opportunities to earn and grow your revenue streams.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&q=80" alt="Knowledge" class="benefit-image">
+                        <div class="benefit-icon">📚</div>
+                        <h3>Access Better Projects</h3>
+                        <p>Together, we can attract higher-quality clients and more interesting projects. My experience in client communication and project acquisition complements your skills perfectly.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=200&q=80" alt="Income" class="benefit-image">
+                        <div class="benefit-icon">💵</div>
+                        <h3>Mutual Support</h3>
+                        <p>We help each other strengthen our strengths and support our weaknesses. While you focus on what you do best, I handle the client acquisition and project management aspects.</p>
+                    </div>
+                </div>
+                
+                <div class="collaboration-explanation">
+                    <h3>How This Collaboration Works</h3>
+                    <p class="lead-text">The beauty of this partnership is that it's designed to benefit both of us naturally. Here's how it flows:</p>
+                    <div class="explanation-steps">
+                        <div class="explanation-step">
+                            <div class="step-number-large">1</div>
+                            <div class="step-content-large">
+                                <h4>Leverage Existing Resources</h4>
+                                <p>You already have a freelancing profile that clients trust. Instead of letting it sit idle or only using it occasionally, we can work together to maximize its potential. This way, your profile becomes an active source of opportunities rather than just a portfolio.</p>
+                            </div>
+                        </div>
+                        <div class="explanation-step">
+                            <div class="step-number-large">2</div>
+                            <div class="step-content-large">
+                                <h4>I Handle the Heavy Lifting</h4>
+                                <p>My role is to connect with clients, understand their needs, secure projects, and manage the delivery process. You maintain full control over your account and finances—you're simply allowing me to help bring in opportunities that you might not have time to pursue yourself.</p>
+                            </div>
+                        </div>
+                        <div class="explanation-step">
+                            <div class="step-number-large">3</div>
+                            <div class="step-content-large">
+                                <h4>Shared Success, Shared Rewards</h4>
+                                <p>When projects come through your account, you receive a fair share of the income. It's a win-win situation: you get passive income from projects you didn't have to actively pursue, and I get to work with trusted profiles that help me build my agency vision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="emphasis-text">This approach allows us to grow together—you strengthen your income sources while I build toward creating a collaborative agency team. It's not about asking you to give up control; it's about finding a way for both of us to achieve more than we could alone.</p>
+                </div>
+
+                <div class="collaboration-path">
+                    <h3>Our Journey Together</h3>
+                    <p class="path-intro">As we build trust and achieve results together, this collaboration can evolve into something even greater:</p>
+                    <div class="path-steps">
+                        <div class="path-step">
+                            <div class="path-icon">1️⃣</div>
+                            <p>We achieve strong results together</p>
+                        </div>
+                        <div class="path-arrow">→</div>
+                        <div class="path-step">
+                            <div class="path-icon">2️⃣</div>
+                            <p>Gain enough clients and projects</p>
+                        </div>
+                        <div class="path-arrow">→</div>
+                        <div class="path-step">
+                            <div class="path-icon">3️⃣</div>
+                            <p>Build an official agency team</p>
+                        </div>
+                        <div class="path-arrow">→</div>
+                        <div class="path-step">
+                            <div class="path-icon">4️⃣</div>
+                            <p>Establish a legal software development company</p>
+                        </div>
+                    </div>
+                    <p class="path-conclusion">This collaboration creates a solid foundation for long-term success for both of us. We're not just working together—we're building something meaningful that benefits everyone involved.</p>
+                </div>
+
+                <div class="question-box-large">
+                    <h3>Does This Sound Like Something That Could Work for You?</h3>
+                    <p>I believe that when freelancers collaborate thoughtfully, everyone wins. If this approach resonates with you, I'd love to discuss how we can make it work in a way that feels comfortable and beneficial for both of us.</p>
+                </div>
             </div>
-            <p style="margin-top: 24px;">This will be the first step of our collaboration. We can achieve strong results. If we successfully gain enough clients and projects, we will have the opportunity to build an official agency team and eventually establish a legal software development company. I believe this collaboration can create a solid foundation for long-term success for both of us.</p>
-            <div class="card" style="margin-top: 24px;">
-              <h4>What Do You Think?</h4>
-              <p>Are you interested in this suggestion? I hope you will collaborate with me on this matter. Together, we can build something meaningful that benefits everyone involved. This collaboration is designed to simply help you with your work and support you to increase your income—it's a partnership built on mutual growth and respect.</p>
-              <p style="margin-top: 12px;">Whether you're a senior developer with years of experience, a junior developer just starting out, or someone from a non-technical background interested in exploring opportunities, this collaboration can benefit you. We all bring different strengths to the table, and together we can achieve more.</p>
-            </div>
-          </div>
-          <aside class="aside-note">
-            <h4>The Vision</h4>
-            <p>We're building a network of collaboration. A network that grows stronger with each successful project, each satisfied client, and each person who joins us. This approach ensures we're helping each other grow while maintaining complete security and control. Together, we can build something bigger than any of us could achieve alone.</p>
-            <img class="section-image" src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1600&auto=format&fit=crop" alt="Team growth and success metrics" />
-          </aside>
         </div>
-      </div>
     </section>
 
-    <section id="role" class="section">
-      <div class="container">
-        <h2>Your Role in This Collaboration</h2>
-        <p class="section-subtitle">Control and oversight with minimal time investment—just a few hours per month</p>
-        <div class="role-timeline">
-          <div class="role-item left">
-            <div class="role-badge">01</div>
-            <h3>Financial Management</h3>
-            <p>In this collaboration, your main role is to manage the financial matters and oversee the progress of our work. The most important part of this role is financial management, and it will be fully under your control and monitoring according to the contract.</p>
-          </div>
-          <div class="role-item right">
-            <div class="role-badge">02</div>
-            <h3>Decision Authority</h3>
-            <p>You will also have the authority to make decisions and determine all events. Even if additional team members join, all communication and activities will be carried out under your supervision.</p>
-          </div>
-          <div class="role-item left">
-            <div class="role-badge">03</div>
-            <h3>Minimal Time Investment</h3>
-            <p>The best thing is that this method will take only a few minutes of your time each day. Even if you're so busy the whole day, it doesn't matter. Even if you're waiting on the sofa for a whole month, you'll earn income from our collaboration.</p>
-          </div>
-          <div class="role-item right">
-            <div class="role-badge">04</div>
-            <h3>Complete Control</h3>
-            <p>In other words, you will be able to manage all the financial matters of your account effectively. You remain in control while we handle the growth and project acquisition.</p>
-          </div>
+    <!-- Role Section -->
+    <section class="role-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Your Role</span>
+                <h2 class="section-title">Your Responsibilities in This Collaboration</h2>
+            </div>
+            <div class="role-content">
+                <div class="role-text">
+                    <p class="lead-text">In this collaboration, you maintain full control and oversight. Your main role is to manage the financial matters and monitor the progress of our work—ensuring everything aligns with your expectations and goals.</p>
+                    <div class="role-features">
+                        <div class="role-feature">
+                            <div class="role-icon">💼</div>
+                            <div class="role-details">
+                                <h3>Financial Management</h3>
+                                <p>The most important part of this role is financial management, and it will be fully under your control and monitor according to the contract.</p>
+                            </div>
+                        </div>
+                        <div class="role-feature">
+                            <div class="role-icon">🎯</div>
+                            <div class="role-details">
+                                <h3>Decision Authority</h3>
+                                <p>You will also have the authority to make decisions and determine all events. Even if additional team members join, all communication and activities will be carried out under your supervision.</p>
+                            </div>
+                        </div>
+                        <div class="role-feature">
+                            <div class="role-icon">⏱️</div>
+                            <div class="role-details">
+                                <h3>Minimal Time Commitment</h3>
+                                <p>The best thing is that this method will take only a few minutes of your time each day. At the same time, you can lead and control all of the work.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="role-summary">In other words, you maintain complete control over your account and finances. This collaboration is designed to enhance what you already have, not to replace your authority or decision-making power.</p>
+                </div>
+                <div class="role-visual">
+                    <div class="role-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80" alt="Time Management" class="role-image">
+                    </div>
+                    <div class="time-comparison">
+                        <div class="time-item">
+                            <div class="time-icon">😴</div>
+                            <div class="time-label">Traditional Way</div>
+                            <div class="time-bar">
+                                <div class="time-fill" style="width: 100%"></div>
+                            </div>
+                            <div class="time-amount">Hours per day</div>
+                        </div>
+                        <div class="time-item">
+                            <div class="time-icon">⚡</div>
+                            <div class="time-label">Our Collaboration</div>
+                            <div class="time-bar">
+                                <div class="time-fill efficient" style="width: 5%"></div>
+                            </div>
+                            <div class="time-amount">Few minutes per day</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card" style="margin-top: 32px; text-align: center; background: rgba(255,215,0,.08); border-left: 4px solid rgba(255,215,0,.5);">
-          <h3>💰 Income Growth Opportunity</h3>
-          <p>This collaboration is designed to give you maximum control with minimum effort. You oversee everything important, especially finances, while we work together to grow your opportunities. The best part is that you maintain full control and authority over all decisions and financial matters, while earning increased income with just a few hours per month.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="future" class="section alt">
-      <div class="container">
-        <h2>Our Future Plan</h2>
-        <p class="section-subtitle">Building a network that grows stronger together</p>
-        <div class="two-col">
-          <div>
-            <p>Our future plan is to gain more clients. Here, I know that the potential of a single account is limited. Therefore, inviting other friends and utilizing more accounts will be a better approach for the future.</p>
-            <p><strong>Holding more accounts means, in other words, getting more income sources.</strong></p>
-            <div class="steps-grid">
-              <div class="step">
-                <div class="step-num">01</div>
-                <h3>Start Together</h3>
-                <p>Begin with our collaboration and see how we can grow your account together.</p>
-              </div>
-              <div class="step">
-                <div class="step-num">02</div>
-                <h3>Invite Others</h3>
-                <p>As we succeed, invite other developers to join our network.</p>
-              </div>
-              <div class="step">
-                <div class="step-num">03</div>
-                <h3>Scale Up</h3>
-                <p>More accounts mean more projects, more clients, and more income for everyone.</p>
-              </div>
-              <div class="step">
-                <div class="step-num">04</div>
-                <h3>Build Agency</h3>
-                <p>Eventually establish a legal software development company together.</p>
-              </div>
+    <!-- Security Section -->
+    <section class="security-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Security</span>
+                <h2 class="section-title">Your Privacy & Security Are Our Top Priority</h2>
             </div>
-          </div>
-          <aside class="aside-note">
-            <h4>The Network Effect</h4>
-            <p>Every developer who joins strengthens the network. More accounts mean more opportunities, more income sources, and a stronger foundation for everyone's future. Together, we can build something much bigger than any of us could achieve alone.</p>
-            <img class="section-image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop" alt="Network growth and expansion" />
-          </aside>
+            <div class="security-content">
+                <div class="security-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80" alt="Security and Trust" class="security-main-image">
+                </div>
+                <div class="security-grid">
+                    <div class="security-card">
+                        <img src="https://images.unsplash.com/photo-1633265486064-086b219458ec?w=150&q=80" alt="Security" class="security-card-image">
+                        <div class="security-icon">🔒</div>
+                        <h3>No Credential Sharing</h3>
+                        <p>Account owners don't need to share any login credentials or sensitive information.</p>
+                    </div>
+                    <div class="security-card">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=150&q=80" alt="Banking" class="security-card-image">
+                        <div class="security-icon">🏦</div>
+                        <h3>Bank Information Protected</h3>
+                        <p>Your banking and financial details remain completely private and secure.</p>
+                    </div>
+                    <div class="security-card">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=150&q=80" alt="Protection" class="security-card-image">
+                        <div class="security-icon">🛡️</div>
+                        <h3>100% Secure</h3>
+                        <p>All sensitive information is protected with industry-standard security measures.</p>
+                    </div>
+                    <div class="security-card">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=150&q=80" alt="Compliance" class="security-card-image">
+                        <div class="security-icon">✅</div>
+                        <h3>Policy Compliant</h3>
+                        <p>Our collaboration is structured as support and assistance, ensuring full compliance with platform policies.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="apply" class="section">
-      <div class="container two-col">
-        <div>
-          <h2>Getting Started: Let's Collaborate</h2>
-          <img class="section-image" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop" alt="Developers discussing collaboration" />
-          <p>Ready to explore collaboration opportunities and increase your income? Here's how we can start working together:</p>
-          <div class="card" style="background: rgba(16,185,129,.08); border-left: 4px solid var(--brand); margin-bottom: 24px;">
-            <h4>🔒 Security First</h4>
-            <p style="margin: 0;">We understand your concerns about security. That's why we've designed this collaboration to be completely safe. You don't need to share any credentials, bank information, or sensitive data. We protect all sensitive information and ensure complete security while helping you grow your opportunities and increase your income.</p>
-          </div>
-          <ol class="numbered">
-            <li>Email us with subject "Developer Collaboration Inquiry"</li>
-            <li>We respond within 24–48 hours to discuss your experience and goals</li>
-            <li>We discuss the collaboration details and answer any questions</li>
-            <li>After agreement, we begin working together to grow your opportunities and increase your income</li>
-          </ol>
-          <div class="card" style="margin-top: 24px;">
-            <h4>What We'll Discuss</h4>
-            <ul class="checklist">
-              <li>Your freelancing experience and current situation</li>
-              <li>How the collaboration will work</li>
-              <li>Financial arrangements and transparency</li>
-              <li>Your role and control in the process</li>
-              <li>Security measures and privacy protection</li>
-              <li>Our vision for mutual growth</li>
-              <li>How we can help each other strengthen strengths and support weaknesses</li>
-            </ul>
-          </div>
+    <!-- Future Plan Section -->
+    <section id="future" class="future-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Future Vision</span>
+                <h2 class="section-title">Our Future Plan</h2>
+            </div>
+            <div class="future-content">
+                <div class="future-text">
+                    <div class="future-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80" alt="Growth and Success" class="future-main-image">
+                    </div>
+                    <p class="lead-text">Our future plan is to gain more clients and create more opportunities for everyone involved.</p>
+                    <p>I recognize that while a single account has great potential, there's even more we can achieve when we work together. As we build trust and see positive results, expanding our collaborative network naturally makes sense. More partners mean more diverse skills, more client connections, and ultimately, more income sources for everyone.</p>
+                    <div class="growth-visual">
+                        <div class="growth-item">
+                            <div class="growth-number">1</div>
+                            <div class="growth-label">Account</div>
+                        </div>
+                        <div class="growth-arrow">+</div>
+                        <div class="growth-item">
+                            <div class="growth-number">5</div>
+                            <div class="growth-label">Accounts</div>
+                        </div>
+                        <div class="growth-arrow">+</div>
+                        <div class="growth-item">
+                            <div class="growth-number">20</div>
+                            <div class="growth-label">Accounts</div>
+                        </div>
+                        <div class="growth-arrow">=</div>
+                        <div class="growth-item highlight-growth">
+                            <div class="growth-number">∞</div>
+                            <div class="growth-label">Income Sources</div>
+                        </div>
+                    </div>
+                    <p class="emphasis-text">Holding more accounts means, in other words, getting more income sources.</p>
+                </div>
+            </div>
         </div>
-        <div class="contact-info">
-          <h3>Contact Us</h3>
-          <div class="contact-info-grid">
-            <a href="mailto:superstar09030826@gmail.com" class="contact-item">
-              <span class="contact-icon email-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                </svg>
-              </span>
-              <div class="contact-details">
-                <span class="contact-label">Email</span>
-                <span class="contact-value">superstar09030826@gmail.com</span>
-              </div>
-            </a>
-            <a href="https://wa.me/12724363995" class="contact-item" target="_blank" rel="noopener noreferrer">
-              <span class="contact-icon whatsapp-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-              </span>
-              <div class="contact-details">
-                <span class="contact-label">WhatsApp</span>
-                <span class="contact-value">+1 (272) 436-3995</span>
-              </div>
-            </a>
-            <a href="https://t.me/lambro_mellon" class="contact-item" target="_blank" rel="noopener noreferrer">
-              <span class="contact-icon telegram-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                </svg>
-              </span>
-              <div class="contact-details">
-                <span class="contact-label">Telegram</span>
-                <span class="contact-value">@lambro_mellon</span>
-              </div>
-            </a>
-            <a href="https://discord.com/users/1275686382127284315" class="contact-item" target="_blank" rel="noopener noreferrer">
-              <span class="contact-icon discord-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                </svg>
-              </span>
-              <div class="contact-details">
-                <span class="contact-label">Discord</span>
-                <span class="contact-value">s_nrtop_s</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-brand">Freelancer Collaboration</div>
-          <p class="footer-description">Join our collaboration to increase your income, get more projects and clients. Help each other strengthen strengths and support weaknesses. No investment required. Just a few hours per month.</p>
-          <div class="footer-highlights">
-            <div class="footer-highlight">
-              <strong>🎯</strong> Mutual Growth
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Passive Income Journey?</h2>
+                <p>Join our collaborative partnership and transform your freelancing account into a reliable income source.</p>
+                <div class="cta-features">
+                    <div class="cta-feature">✓ No investment required</div>
+                    <div class="cta-feature">✓ Just few hours per month</div>
+                    <div class="cta-feature">✓ Full financial control</div>
+                    <div class="cta-feature">✓ 100% secure</div>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-links">
+                        <a href="mailto:superstar09030826@gmail.com" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://discord.com/users/1275686382127284315" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                            <span>Discord</span>
+                        </a>
+                        <a href="https://t.me/lambro_mellon" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12a12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472c-.18 1.898-.962 6.502-1.36 8.627c-.168.9-.499 1.201-.82 1.23c-.696.065-1.225-.46-1.9-.902c-1.056-.693-1.653-1.124-2.678-1.8c-1.185-.78-.417-1.21.258-1.91c.177-.184 3.247-2.977 3.307-3.23c.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345c-.48.33-.913.49-1.302.48c-.428-.008-1.252-.241-1.865-.44c-.752-.245-1.349-.374-1.297-.789c.027-.216.325-.437.893-.663c3.498-1.524 5.83-2.529 6.998-3.014c3.782-1.555 4.562-1.828 5.068-1.845z"/>
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://wa.me/12724363995" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-highlight">
-              <strong>🔒</strong> 100% Secure & Safe
-            </div>
-            <div class="footer-highlight">
-              <strong>⏱️</strong> Minimal Time Required
-            </div>
-          </div>
         </div>
-        
-        <div class="footer-col">
-          <h4 class="footer-title">Quick Links</h4>
-          <nav class="footer-nav">
-            <a href="#about">About Collaboration</a>
-            <a href="#experience">My Experience</a>
-            <a href="#plan">The Plan</a>
-            <a href="#collaboration">Collaboration</a>
-            <a href="#role">Your Role</a>
-            <a href="#future">Future Plan</a>
-            <a href="#apply">Get Started</a>
-          </nav>
-        </div>
-        
-        <div class="footer-col">
-          <h4 class="footer-title">Services</h4>
-          <ul class="footer-list">
-            <li>Collaboration & Partnership</li>
-            <li>Project Acquisition & Bidding</li>
-            <li>Income Growth Opportunities</li>
-            <li>Complete Security & Privacy</li>
-            <li>Financial Control</li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <h4 class="footer-title">Get Started</h4>
-          <p class="footer-text">Ready to explore collaboration opportunities? Email us with subject "Developer Collaboration Inquiry" and let's discuss how we can work together.</p>
-          <a href="#apply" class="btn btn-sm">Get Started</a>
-          <div class="footer-contact">
-            <p class="footer-text"><strong>Note:</strong> Email us with subject "Developer Collaboration Inquiry"</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <div class="footer-bottom-content">
-          <div class="footer-copyright">
-            <p>&copy; 2025 Freelancer Collaboration. All rights reserved.</p>
-            <p class="footer-disclaimer">Open to developers and professionals worldwide. Transparent agreements. Mutual growth. 100% secure. No investment required.</p>
-          </div>
-          <div class="footer-credits">
-            Made with <span aria-label="love">Simon</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Collaborative Partnership</h3>
+                    <p>Growing income through strategic collaboration</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#plan">Plan</a></li>
+                        <li><a href="#collaboration">Collaboration</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#future">Future</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-links">
+                        <a href="https://discord.com/users/1275686382127284315" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                            <span>Discord</span>
+                        </a>
+                        <a href="https://t.me/lambro_mellon" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12a12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472c-.18 1.898-.962 6.502-1.36 8.627c-.168.9-.499 1.201-.82 1.23c-.696.065-1.225-.46-1.9-.902c-1.056-.693-1.653-1.124-2.678-1.8c-1.185-.78-.417-1.21.258-1.91c.177-.184 3.247-2.977 3.307-3.23c.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345c-.48.33-.913.49-1.302.48c-.428-.008-1.252-.241-1.865-.44c-.752-.245-1.349-.374-1.297-.789c.027-.216.325-.437.893-.663c3.498-1.524 5.83-2.529 6.998-3.014c3.782-1.555 4.562-1.828 5.068-1.845z"/>
+                            </svg>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://wa.me/12724363995" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51c-.173-.008-.371-.01-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <span>WhatsApp: +1 (272) 436-3995</span>
+                        </a>
+                        <a href="mailto:superstar09030826@gmail.com" class="footer-contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            </svg>
+                            <span>superstar09030826@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Collaborative Partnership. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
 
