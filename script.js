@@ -221,12 +221,12 @@ function loadTestimonials() {
             <div class="testimonial-footer">
                 <div class="testimonial-author">
                     <div class="author-name">${testimonial.name}</div>
+                    <div class="author-role">${testimonial.role}</div>
                     <div class="author-details">
-                        <span class="author-role">${testimonial.role}</span>
                         <span class="author-location">${testimonial.location}</span>
+                        <span class="testimonial-duration">${testimonial.duration}</span>
                     </div>
                 </div>
-                <div class="testimonial-duration">${testimonial.duration}</div>
             </div>
         </div>
     `).join('');
