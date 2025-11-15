@@ -1,14 +1,17 @@
-// Smooth scrolling for navigation links
+// Smooth scrolling for anchor links (only if on same page)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        // Only prevent default if the target exists on the current page
+        const target = document.querySelector(href);
         if (target) {
+            e.preventDefault();
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
         }
+        // If target doesn't exist, let the browser handle navigation normally
     });
 });
 
@@ -118,27 +121,37 @@ document.querySelectorAll('.time-item').forEach(item => {
     timeBarsObserver.observe(item);
 });
 
-// Add active class to nav links on scroll
-const sections = document.querySelectorAll('section[id]');
-
-window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
-    
-    sections.forEach(section => {
-        const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
-        const sectionId = section.getAttribute('id');
-        
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${sectionId}`) {
-                    link.classList.add('active');
-                }
-            });
-        }
-    });
+// Add active class to nav links based on current page
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(link => {
+    const linkHref = link.getAttribute('href');
+    if (linkHref === currentPage || (currentPage === 'index.html' && linkHref === 'index.html')) {
+        link.classList.add('active');
+    }
 });
+
+// Add active class to nav links on scroll (for single-page sections if any)
+const sections = document.querySelectorAll('section[id]');
+if (sections.length > 0) {
+    window.addEventListener('scroll', () => {
+        const scrollY = window.pageYOffset;
+        
+        sections.forEach(section => {
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = section.offsetTop - 100;
+            const sectionId = section.getAttribute('id');
+            
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    });
+}
 
 // Form submission (if you add a contact form later)
 document.addEventListener('DOMContentLoaded', () => {

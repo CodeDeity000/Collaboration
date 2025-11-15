@@ -1764,3 +1764,191 @@ img {
     animation: fadeIn 1s ease-out;
 }
 
+/* Page Navigation */
+.page-navigation {
+    padding: 2rem 0 0;
+    background: transparent;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 0;
+}
+
+/* Page Navigation backgrounds matching sections */
+.testimonials-section ~ .page-navigation,
+.page-navigation.testimonials-nav {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #f0f4ff 100%);
+    border-bottom: none;
+}
+
+.experience-section ~ .page-navigation,
+.page-navigation.experience-nav {
+    background: var(--bg-secondary);
+    border-bottom: none;
+}
+
+.plan-section ~ .page-navigation,
+.page-navigation.plan-nav {
+    background: var(--bg-primary);
+    border-bottom: none;
+}
+
+.approach-section ~ .page-navigation,
+.page-navigation.approach-nav {
+    background: var(--bg-secondary);
+    border-bottom: none;
+}
+
+.collaboration-section ~ .page-navigation,
+.page-navigation.collaboration-nav {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-bottom: none;
+}
+
+.role-section ~ .page-navigation,
+.page-navigation.role-nav {
+    background: var(--bg-secondary);
+    border-bottom: none;
+}
+
+.security-section ~ .page-navigation,
+.page-navigation.security-nav {
+    background: var(--bg-dark);
+    border-bottom: none;
+}
+
+.future-section ~ .page-navigation,
+.page-navigation.future-nav {
+    background: var(--bg-secondary);
+    border-bottom: none;
+}
+
+.cta-section ~ .page-navigation,
+.page-navigation.cta-nav {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-bottom: none;
+}
+
+/* Adjust button colors for dark backgrounds */
+.page-navigation.collaboration-nav .page-nav-button,
+.page-navigation.security-nav .page-nav-button,
+.page-navigation.cta-nav .page-nav-button {
+    background: transparent;
+    backdrop-filter: none;
+    color: white;
+    border: none;
+}
+
+.page-navigation.collaboration-nav .page-nav-button:hover,
+.page-navigation.security-nav .page-nav-button:hover,
+.page-navigation.cta-nav .page-nav-button:hover {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.page-navigation.collaboration-nav .page-nav-label,
+.page-navigation.security-nav .page-nav-label,
+.page-navigation.cta-nav .page-nav-label {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.page-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.page-nav-button {
+    display: flex;
+    width: 100%;
+    align-items: right;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    min-width: 150px;
+    justify-content: right;
+}
+
+.page-nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.page-nav-button.back {
+    justify-content: flex-start;
+}
+
+.page-nav-button.next {
+    justify-content: flex-end;
+    margin-left: auto;
+    text-align: right;
+}
+
+.page-nav-button svg {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.page-nav-button.back:hover svg {
+    transform: translateX(-3px);
+}
+
+.page-nav-button.next:hover svg {
+    transform: translateX(3px);
+}
+
+.page-nav-button:disabled,
+.page-nav-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.page-nav-button:focus {
+    outline: none;
+    border: none;
+}
+
+.page-nav-label {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.page-nav-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .page-nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .page-nav-button {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .page-nav-button.back,
+    .page-nav-button.next {
+        justify-content: center;
+    }
+}
+
